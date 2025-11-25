@@ -4,7 +4,7 @@ Este sketch proporciona una conexión básica y funcional a **The Things Network
 
 Incluye correcciones críticas para evitar reinicios constantes ("Guru Meditation Error") y asegurar que la radio funcione correctamente.
 
-## �️ Requisitos Previos
+## Requisitos Previos
 
 ### Hardware
 *   **Placa**: Heltec WiFi LoRa 32 V3 (ESP32-S3 + SX1262)
@@ -18,7 +18,7 @@ Incluye correcciones críticas para evitar reinicios constantes ("Guru Meditatio
 3.  **Librería LoRaWAN**:
     *   Este código utiliza la librería nativa `LoRaWan_APP.h` que viene incluida con las definiciones de placa Heltec dentro del paquete esp32. Asegúrate de seleccionar la placa correcta (**Heltec WiFi LoRa 32(V3)**).
 
-## �📋 Cómo configurar para tu dispositivo
+## Cómo configurar para tu dispositivo
 
 Para usar este código en otro dispositivo o con otra aplicación de TTN, debes modificar las siguientes líneas en el archivo `.ino`:
 
@@ -66,7 +66,7 @@ Este código incluye dos correcciones críticas para la placa Heltec V3. **No el
     ```
     Este retraso de 3 segundos al inicio es vital para evitar que la placa entre en un bucle de reinicios (Crash Loop) al inicializar el hardware.
 
-## 🚀 Cómo subir el código
+## Cómo subir el código
 
 1.  Instala la librería **"Heltec ESP32 Dev-Boards"**.
 2.  Selecciona la placa: **Heltec WiFi LoRa 32(V3)**.
@@ -74,3 +74,4 @@ Este código incluye dos correcciones críticas para la placa Heltec V3. **No el
     *   **LoRaWan Region**: EU868 (o tu región).
     *   **LoRaWan Debug Level**: None (o Freq para ver frecuencias).
 4.  Conecta la placa y sube el sketch.
+
